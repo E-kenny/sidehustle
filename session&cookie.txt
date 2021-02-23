@@ -1,0 +1,11 @@
+---------------session-----------------
+
+A session variable is a special kind of variable that, once set, is available to all the pages in an application for as long as the user has their browser open or until the session is explicitly terminated by the developer.
+
+----------------cookie-----------------
+A cookie, also known as an HTTP cookie, web cookie, or browser cookie, is a small piece of data sent from a website and stored in a user’s web browser while a user is browsing a website.
+
+
+----------------What is the difference between session variable and Cookie?---------------------------------------
+
+The data stored in a session variable is destroyed when the session ends while the data stored in cookies will stay alive as they are stored on your local machine so the web browser can access them every time you log in to a website. A cookie is a small file that the server embeds on the user’s computer. Rather than stored on local machine a session variable is stored on the server so client doesn’t have access to the details stored on it. Session helps to maintain user states and information to all over the application. The session is secure and transparent for the user. Cookies are used to store details in the end- user’s browser, so the web server can track the end-user. Cookies are used to identify the user’s session identifier on the server records so they are more secure way of storing user details. Both cookies and sessions are used to store data or values. Sessions are used to maintain the state when you navigate through a website. Session data is stored on the server while the cookie data is stored on the client so it’s easy for the user to modify the content of the cookie, but too much difficult to modify the session content.
