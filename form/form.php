@@ -25,7 +25,7 @@ echo "<!DOCTYPE html>
 <p>Thank God for making you a <strong>$gender</strong>,  you are born <b>$date</b>, you have the email <b>$email</b> and you like eating " ;
 if(!empty($favourite_food)){ 
     foreach($favourite_food as $selected){
-        echo "<b>".$selected."</b>" ;
+        echo "<b>".$selected." </b>" ;
     }
     echo  "</P></div><br>
 </body>
