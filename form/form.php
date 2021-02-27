@@ -1,38 +1,38 @@
 <?php
 if(isset($_POST['submitted_form'])){
- $firstname = $_POST['firstname'];
- $lastname = $_POST['lastname'];
- $email = $_POST['email'];
- $gender = $_POST['gender'];
- $date = $_POST['date'];
+    $firstname = htmlspecialchars($_POST['firstname']);
+    $lastname = htmlspecialchars($_POST['lastname']);
+    $email = htmlspecialchars($_POST['email']);
+    $gender = $_POST['gender'];
+    $date = $_POST['date'];
 
-echo "<!DOCTYPE html>
-<html lang=\"en\">
-<head>
-<style>
-    div {
-        margin : auto;
-        width: 50%;
-    }
-</style>
-    <meta charset=\"UTF-8\">
-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-    <title>Document</title>
-</head>
-<body>
-<div><h1>Welcome, $firstname $lastname </h1>
-<p>Thank God for making you a <strong>$gender</strong>,  you are born on <b>$date</b>, you have the email <b>$email</b> " ;
+    echo "<!DOCTYPE html>
+    <html lang=\"en\">
+    <head>
+    <style>
+        div {
+            margin : auto;
+            width: 50%;
+        }
+    </style>
+        <meta charset=\"UTF-8\">
+        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+        <title>Document</title>
+    </head>
+    <body>
+    <div><h1>Welcome, $firstname $lastname </h1>
+    <p>Thank God for making you a <strong>$gender</strong>,  you are born on <b>$date</b>, you have the email <b>$email</b> " ;
 
-if(!empty($_POST['favourite_food'])){ 
-    $favourite_food = $_POST['favourite_food'];
-    echo " and you like eating ";
-    foreach($favourite_food as $selected){
-        echo "<b>".$selected.","." </b>" ;
+    if(!empty($_POST['favourite_food'])){ 
+        $favourite_food = $_POST['favourite_food'];
+        echo " and you like eating ";
+        foreach($favourite_food as $selected){
+            echo "<b>".$selected." </b>" ;
+        }
+        echo  "</P></div><br>
+    </body>
+    </html>";
     }
-    echo  "</P></div><br>
-</body>
-</html>";
-}
 
 
 }else{
@@ -60,8 +60,9 @@ if(!empty($_POST['favourite_food'])){
     </style>
 </head>
 <body>
-<div>
-    <form action="" method="post">
+<div>'
+?>
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
         <label for="firstname">Firstname : </label><br><input type="text" name="firstname" id="" required><br>
         <br>
         
@@ -93,7 +94,7 @@ if(!empty($_POST['favourite_food'])){
 </div>
 </body>
 </html>';
+<?php
 }
+
 ?>
-
-
