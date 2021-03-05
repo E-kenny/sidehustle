@@ -4,7 +4,7 @@
 <style>
     div {
         margin : auto;
-        width: 30%;
+        width: 50%;
         border-radius: 20px;
         height: 70vh;
     }
@@ -14,6 +14,9 @@
         border-radius: 30px;
         margin: auto;
     }
+    a{
+        text-decoration: none;
+     }
     
     </style>
 
@@ -31,7 +34,8 @@
         <br>
         <input type="submit" value="submit">
     </form>
-    <h4>Don't have account yet? <a href="signUp.php">go to Sign up</a></h4>
+    <h5>Don't have account yet? </h5>
+    <h4><a href="signUp.php">go to Sign up</a></h4>
     </div>
 </body>
 </html>

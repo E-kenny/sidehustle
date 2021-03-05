@@ -1,7 +1,7 @@
 <?php
-session_start();
+ session_start();
 if (isset($_SESSION['username']) && isset($_SESSION['password'])) {
-    
+   
     if($_SESSION['username'] === $_POST['username'] && $_SESSION['password'] === $_POST['password']){
       
        $username =  $_SESSION['username'] ;
@@ -16,6 +16,9 @@ if (isset($_SESSION['username']) && isset($_SESSION['password'])) {
                     margin : auto;
                     width: 50%;
                 }
+                a{
+                     text-decoration: none;
+                }
             </style>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +27,9 @@ if (isset($_SESSION['username']) && isset($_SESSION['password'])) {
             <body>
             <div>
                 <p>
-                    <?php echo "<h1>Hello $username</h1> <h3>your password is $password</h3> <p> you are highly welcome to E_kenny sidehustle task";?>
+                    <?php echo "<h1>Hello, $username!!</h1> <h3>your password is $password</h3> <p> you are highly welcome to E_kenny's sidehustle week2 task.";?>
+                    <h5>want to change password or username? </h5>
+                    <h4><a href="signUp.php">go to Sign up</a></h4>
                 </p>
             </div>
             </body>
@@ -32,14 +37,14 @@ if (isset($_SESSION['username']) && isset($_SESSION['password'])) {
 <?php
         }else{
             
-            header("location: signUp.php");
+            header("location: login.php");
 
         }
  
 
 } else {
 
-    header("location: login.php");
+    header("location: signUp.php");
 
 }
 ?>

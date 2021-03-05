@@ -15,7 +15,7 @@ header("location: login.php");
 <style>
     div {
         margin : auto;
-        width: 30%;
+        width: 50%;
         border-radius: 20px;
         height: 70vh;
     }
@@ -25,6 +25,9 @@ header("location: login.php");
         border-radius: 30px;
         margin: auto;
     }
+    a{
+        text-decoration: none;
+     }
     
     </style>
 
@@ -42,7 +45,8 @@ header("location: login.php");
         <br>
         <input type="submit" name="submit" value="submit">
     </form>
-    <h4>Already Signed up? <a href="login.php">go to login</a></h4>
+    <h5>Already Signed up? </h5>
+    <h4><a href="login.php">go to login</a></h4>
     </div>
 </body>
 </html>
