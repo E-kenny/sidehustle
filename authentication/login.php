@@ -32,7 +32,7 @@
         <br>
         <label for="">Password:</label><br><input type="password" name="password" id="" required><br>
         <br>
-        <input type="submit" value="submit">
+        <input type="submit" name="submit" value="submit">
     </form>
     <h5>Don't have account yet? </h5>
     <h4><a href="signUp.php">go to Sign up</a></h4>
