@@ -1,0 +1,35 @@
+div {
+    margin : auto;
+    width: 50%;
+    /* border-radius: 20px; */
+    height: 70vh;
+}
+input[type='text'], input[type='password'], input[type='email']{
+    width:90%;
+    border: 2px solid grey;
+    border-radius: 30px;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+ }
+
+.task-container{
+    display: flex;
+    justify-content: center;
+    height:30px;
+    background-color: rgb(206, 192, 211);
+    
+}
+.task{
+    flex: 7;
+    height:20px;
+    background-color: white;
+    
+}
+.button{
+    flex:1;
+    height:30px;
+    background-color: rgb(206, 192, 211);
+
+}
