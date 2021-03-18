@@ -1,14 +1,16 @@
+
 div {
     margin : auto;
     width: 50%;
-    /* border-radius: 20px; */
     height: 70vh;
+    margin-top: 10%;
 }
 input[type='text'], input[type='password'], input[type='email']{
     width:90%;
     border: 2px solid grey;
     border-radius: 30px;
-    margin: auto;
+    margin: 2%;
+    padding: 3%;
 }
 a{
     text-decoration: none;
@@ -17,21 +19,60 @@ a{
 .task-container{
     display: flex;
     justify-content: center;
-    height:30px;
-    background-color: rgb(206, 192, 211);
+    height:35px;
+    background-color:sandybrown;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 5px;
     
     
 }
 .task{
     flex: 5;
     height:20px;
-    background-color: white;
+    background-color:rgb(31, 28, 28);
+    color: white;
+    align-content: center;
     
 }
-.button{
+.button-del{
+    flex:1;
+    height:30px;
+    background-color: red;
+    height:20px;
+    color: white;
+
+
+}
+.button-up{
+    flex:1;
+    background-color: rgb(37, 228, 37);
+    height:20px;
+    color: white;
+
+}
+
+.button-username, .button-sn, .button-time{
     flex:2;
     height:30px;
-    background-color: rgb(206, 192, 211);
+    background-color: black;
+    height:20px;
+    color: white;
 
+}
+
+textarea{
+    width:150%;
+    margin-top: 5%;
+}
+h1{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 5%;
+}
+@media  (min-width:5px) and (max-width:600px){
+    body{
+        font-size:65.2%;
+    }
 }

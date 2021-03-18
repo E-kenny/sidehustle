@@ -10,7 +10,7 @@
 </head>
 <body>
     <div>
-    <h1>update Task</h1>
+   
         <?php
         $id=$_GET['id'];
         if(isset($_POST['submit'])){
@@ -34,12 +34,16 @@
             $id = $_GET['id'];
             $username =$_GET['username'];
             $time =$_GET['time'];
-            echo '<div><form action="update.php?id='.$id.'" method="post">
+            $task = $_GET['task'];
+            echo '<div>
+            <h1>update Task</h1>
+            <hr>
+            <form action="update.php?id='.$id.'" method="post">
             <label for="">Username:</label><br><input type="text" name="username" id="" value='.$username.'><br>
             <br>
             <label for="">Time:</label><br><input type="text" name="time" placeholder="2:00pm" value='.$time.'><br>
             <br>
-            <label for="">Task:</label><br><textarea id="" name="task" rows="3" cols="40" >
+            <label for="">Task:</label><br><textarea id="" name="task" rows="3" cols="40">'.$task.'
             </textarea>
             <br>
             <input type="hidden" name="id"  value='.$id.'>

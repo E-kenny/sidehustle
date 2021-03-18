@@ -10,6 +10,15 @@
     <title>tasks</title>
 </head>
 <body>
+    <h1><a href="create.php">Create-task</a></h1>
+    <section class="task-container">
+                <section class="button-sn">SN</section>
+                <section  class= "task">Tasks</section>
+                <section  class= "button-username">Username</section>
+                <section  class= "button-time">Time</section>
+                <section  class= "button-up">Button</section>
+                <section  class= "button-del">Button</section>
+    </section>
     <?php
         require_once "config.php";
         $sql = 'SELECT * FROM `tasks`';
@@ -20,16 +29,15 @@
             $task = $row['task'];
             $time = $row['time'];
            echo '<section class="task-container">
-                <div class="button">'.$id. '</div>
-                <div  class= "task">'.$task. '</div>
-                <div  class= "button">'.$username. '</div>
-                <div  class= "button">'.$time. '</div>
-                <div  class= "button"><a href="update.php?id='.$id.'&username='.$username.'&time='.$time.'">Update </a></div>
-                <div  class= "button"><a href="delete.php?id='.$id.'">Delete </a> </div>
+                <section class="button-sn">'.$id. '</section>
+                <section  class= "task">'.$task. '</section>
+                <section  class= "button-username">'.$username. '</section>
+                <section  class= "button-time">'.$time. '</section>
+                <section  class= "button-up"><a href="update.php?id='.$id.'&username='.$username.'&time='.$time.'&task='.$task.'">Update </a></section>
+                <section  class= "button-del"><a href="delete.php?id='.$id.'">Delete </a> </section>
            </section>
            ';
         }
         ?>
-       <h4><a href="create.php">Create-task</a></h4>
 </body>
 </html></html>

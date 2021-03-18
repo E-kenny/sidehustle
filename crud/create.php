@@ -9,7 +9,6 @@
 </head>
 <body>
     <div>
-        <h1>Create task</h1>
         <?php
         if(isset($_POST['submit'])){
             
@@ -24,7 +23,11 @@
             $query->execute();
             header("location: index.php");
         }else{
-            echo '<div><form action="" method="post">
+            echo '           
+            <div>
+            <h1>Create task</h1>
+            <hr>
+            <form action="" method="post">
             <label for="">Username:</label><br><input type="text" name="username" id="" required><br>
             <br>
             <label for="">Time:</label><br><input type="text" name="time" placeholder="2:00pm" required><br>
