@@ -21,8 +21,8 @@
             $time = $row['time'];
            echo '<section class="task-container">
                 <div class="button">'.$id. '</div>
-                <div  class= "task">'.$username. '</div>
-                <div  class= "button">'.$task. '</div>
+                <div  class= "task">'.$task. '</div>
+                <div  class= "button">'.$username. '</div>
                 <div  class= "button">'.$time. '</div>
                 <div  class= "button"><a href="update.php?id='.$id.'">Update </a></div>
                 <div  class= "button"><a href="delete.php?id='.$id.'">Delete </a> </div>

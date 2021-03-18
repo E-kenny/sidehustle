@@ -12,15 +12,25 @@
     <div>
     <h1>update Task</h1>
         <?php
+        $id=$_GET['id'];
         if(isset($_POST['submit'])){
             require_once "config.php";
+           
+            $query = $pdo->prepare("UPDATE `tasks` SET `username`=:username, `task`=:task, `time`=:time WHERE `Id`=:id ");
+            $query->bindParam(':username', $username);
+            $query->bindParam(':task', $task);
+            $query->bindParam(':time', $time);
+            $query->bindParam(':id', $id);
+            
             $username = $_POST['username'];
             $task = $_POST['task'];
             $time = $_POST['time'];
             $id = $_POST['id'];
-            $query = "UPDATE `tasks` SET `username`=$username, `task`=$task, `time`=$time WHERE `Id`=$id ";
-            $pdo -> exec($query);
+           
+            $query->execute();
+            
             header("location: index.php");
+
         }else if(isset($_GET['id'])){ 
             $id = $_GET['id'];
             echo '<div><form action="update.php?id='.$id.'" method="post">
@@ -29,16 +39,16 @@
             <label for="">Time:</label><br><input type="text" name="time" placeholder="2:00pm" ><br>
             <br>
             <label for="">Task:</label><br><textarea id="" name="task" rows="3" cols="40">
-
             </textarea>
             <br>
+            <input type="hidden" name="id"  value='.$id.'>
             <input type="submit" name="submit" value="submit">
         </form>
         <h4><a href="index.php">Go to tasks</a></h4>';
         }else{
             header('location: index.php');
-        '}
-    </div>
+        
+  echo  '</div>
 </body>
 </html>';
 }
