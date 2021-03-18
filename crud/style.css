@@ -19,16 +19,18 @@ a{
     justify-content: center;
     height:30px;
     background-color: rgb(206, 192, 211);
+    flex-wrap: wrap;
+    
     
 }
 .task{
-    flex: 7;
+    flex: 5;
     height:20px;
     background-color: white;
     
 }
 .button{
-    flex:1;
+    flex:2;
     height:30px;
     background-color: rgb(206, 192, 211);
 

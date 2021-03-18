@@ -1,8 +1,10 @@
 <?php
     require_once "config.php";
-    $id= $_GET['Id'];
-    $query = 'DELETE FROM `tasks` WHERE `Id`= $id ';
-    $pdo -> exec($query);
+    
+    $query = $pdo->prepare('DELETE FROM `tasks` WHERE `Id`= :id ');
+    $query->bindParam(':id', $id);
+    $id= $_GET['id'];
+    $query -> execute();
     header("location: index.php");
 
 ?>

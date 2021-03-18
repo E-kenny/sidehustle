@@ -24,12 +24,12 @@
                 <div  class= "task">'.$task. '</div>
                 <div  class= "button">'.$username. '</div>
                 <div  class= "button">'.$time. '</div>
-                <div  class= "button"><a href="update.php?id='.$id.'">Update </a></div>
+                <div  class= "button"><a href="update.php?id='.$id.'&username='.$username.'&time='.$time.'">Update </a></div>
                 <div  class= "button"><a href="delete.php?id='.$id.'">Delete </a> </div>
            </section>
            ';
         }
         ?>
-       <h4><a href="create.php">Go to create-task</a></h4>
+       <h4><a href="create.php">Create-task</a></h4>
 </body>
 </html></html>
