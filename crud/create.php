@@ -25,7 +25,7 @@
         }else{
             echo '           
             <div>
-            <h1>Create task</h1>
+            <h1 class="h1">Create task</h1>
             <hr>
             <form action="" method="post">
             <label for="">Username:</label><br><input type="text" name="username" id="" required><br>
@@ -38,7 +38,7 @@
             <br>
             <input type="submit" name="submit" value="submit">
         </form>
-        <h4><a href="index.php">Go to tasks</a></h4>
+        <h3><a href="index.php">Go to tasks</a></h3>
         
     </div>
 </body>

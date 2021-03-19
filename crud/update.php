@@ -36,7 +36,7 @@
             $time =$_GET['time'];
             $task = $_GET['task'];
             echo '<div>
-            <h1>update Task</h1>
+            <h1 class="h1">update Task</h1>
             <hr>
             <form action="update.php?id='.$id.'" method="post">
             <label for="">Username:</label><br><input type="text" name="username" id="" value='.$username.'><br>
@@ -49,7 +49,7 @@
             <input type="hidden" name="id"  value='.$id.'>
             <input type="submit" name="submit" value="submit">
         </form>
-        <h4><a href="index.php">Go to tasks</a></h4>';
+        <h3><a href="index.php">Go to tasks</a></h3>';
         }else{
             header('location: index.php');
         

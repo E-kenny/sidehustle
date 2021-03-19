@@ -41,7 +41,6 @@ a{
     height:30px;
     background-color: red;
     height:20px;
-    color: white;
 
 
 }
@@ -49,7 +48,7 @@ a{
     flex:1;
     background-color: rgb(37, 228, 37);
     height:20px;
-    color: white;
+    
 
 }
 
@@ -63,16 +62,40 @@ a{
 }
 
 textarea{
-    width:150%;
+    width:100%;
     margin-top: 5%;
-}
-h1{
-    width: 90%;
-    margin: auto;
     margin-bottom: 5%;
 }
+h1{
+    margin-left: 40%;
+    margin-bottom: 5%;
+}
+h3{
+    margin-top: 5%;
+}
+.h1{
+    margin-left: 30%;
+    margin-bottom: 5%;
+}
+hr{
+    margin-bottom: 5%;
+}
+.copy{
+    margin-right: 75%;
+}
+
 @media  (min-width:5px) and (max-width:600px){
     body{
         font-size:65.2%;
+    }
+
+    div {
+        margin : auto;
+        width: 85%;
+        height: 70vh;
+        margin-top: 10%;
+    }
+    .copy{
+        margin-right: 46%;
     }
 }
