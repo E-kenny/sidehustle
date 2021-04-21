@@ -1,10 +1,10 @@
 <?php
 /* Database credentials. 
 server with default setting (user 'root' with no password) */
-define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
-define('DB_NAME', 'sidehustle');
+define('DB_SERVER', 'remotemysql.com');
+define('DB_USERNAME', 'jNtqsA2a9S');
+define('DB_PASSWORD', 'L6t5BDCuHO');
+define('DB_NAME', 'jNtqsA2a9S');
  
 /*connect to MySQL database */
 try{

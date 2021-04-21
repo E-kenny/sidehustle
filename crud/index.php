@@ -10,8 +10,8 @@
     <title>tasks</title>
 </head>
 <body>
-    <h1>Tasks</h1>
-    <hr>
+    <h1>Tasks</h1> 
+    <hr>   
     <section class="task-container">
                 <section class="button-sn">SN</section>
                 <section  class= "task">Tasks</section>
@@ -40,7 +40,6 @@
            ';
         }
         ?>
-    <h3 > <a href="create.php" style="margin-right: 20%">Go to Create-task</a>&copy E_kenny 2021</h3>
-
+         <h3 > <a href="create.php" class="copy">Go to Create-task</a>&copy E_kenny 2021</h3>
 </body>
 </html></html>
