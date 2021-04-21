@@ -22,13 +22,13 @@ $display=$stored.$pressed;
 if($pressed=='C'){
     $display='';
 }elseif($pressed=='=' && preg_match('~^\d*\.?\d+(?:[*/+-]\d*\.?\d+)*$~',$stored)){
-    $display.=eval("return $stored;");
+    $display.= eval("return $stored;");
 }
 
 echo "<form action=\"\" method=\"POST\">";
     echo "<table style=\"width:300px;border:solid thick black;\">";
         echo "<tr>";
-            echo "<td colspan=\"4\">$display</td>";
+            echo "<td colspan=\"4\"> Ans $display</td>";
         echo "</tr>";
         foreach(array_chunk($buttons,4) as $chunk){
             echo "<tr>";
